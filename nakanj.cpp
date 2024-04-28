@@ -5,6 +5,7 @@ using namespace std;
 int x[] = {2, 2, -2, -2, 1, 1, -1, -1};
 int y[] = {1, -1, 1, -1, 2, -2, 2, -2};
 
+// https://www.spoj.com/status/NAKANJ,vivekm__/
 vector<pair<int, int> > getAdjacent(vector<vector<int> >& graph, int r, int c) {
     
     vector<pair<int, int> > arr;
