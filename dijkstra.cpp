@@ -1,6 +1,8 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream> 
+#include <vector>
+#include <queue>
 
+using namespace std;
 
 typedef pair<int, int> NodeAndDistance;
 typedef vector<vector<NodeAndDistance> > AdjacencyList;
@@ -103,5 +105,5 @@ int main() {
     for (int u : path02) {
         cout << u << " ";
     }
-    cout << endl << "Length of the path: " << distance;
+    cout << endl << "Length of the path: " << distance << "\n";
 }

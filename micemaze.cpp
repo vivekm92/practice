@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream> 
+#include <vector>
+#include <queue>
 using namespace std;
 
 // https://www.spoj.com/status/MICEMAZE,vivekm__/
