@@ -1,0 +1,10 @@
+4 3 2 1 8 7 6 5 12 11 10 9
+
+
+/* 
+
+Explanation :
+
+B[i][A[i].size() - 1 - j] = A[i][j] is reversing the contents of a row.
+
+*/
