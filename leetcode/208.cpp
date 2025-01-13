@@ -1,5 +1,9 @@
-#include "main.h"
+#include <iostream>
+#include <vector>
 
+using namespace std;
+
+// https://leetcode.com/problems/implement-trie-prefix-tree/description/
 struct TrieNode {
 	std::vector<TrieNode* > characters;
 	bool flag;
@@ -48,3 +52,9 @@ class Trie {
 			return this->search(prefix, true);
 		}
 };
+
+// Driver code for testing
+int main() {
+	
+	return 0;
+}

@@ -1,5 +1,9 @@
-#include "main.h"
+#include <iostream>
+#include <vector>
 
+using namespace std;
+
+// https://leetcode.com/problems/map-sum-pairs/description/
 struct TrieNode {
     vector<TrieNode* > arr;
     bool flag;
@@ -60,3 +64,9 @@ public:
  * obj->insert(key,val);
  * int param_2 = obj->sum(prefix);
  */
+ 
+ // Driver code for testing 
+ int main() {
+	 
+	 return 0;
+ }
