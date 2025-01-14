@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/
 class Solution {
     private:
         // using two for loops : brute-force
