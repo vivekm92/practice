@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/
 class Solution {
     private:
         // using three for loops : brute-force
