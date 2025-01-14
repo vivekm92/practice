@@ -21,7 +21,7 @@ public:
     MapSum() {
         this->root = new TrieNode();
     }
-    
+
     void insert(string key, int val) {
         this->um[key] = val;
         TrieNode* node = this->root;
@@ -33,9 +33,9 @@ public:
         }
         node->flag = true;
     }
-    
+
     bool isPrefix(string word, string prefix) {
-        
+
         if (word.size() < prefix.size()) return false;
         TrieNode *node = this->root;
         for (int i=0; i<prefix.size(); i++) {
@@ -46,14 +46,14 @@ public:
         }
         return true;
     }
-    
+
     int sum(string prefix) {
         int total = 0;
         for (auto it = this->um.begin(); it != this->um.end(); it++) {
             if (this->isPrefix(it->first, prefix)) {
                 total += it->second;
             }
-        } 
+        }
         return total;
     }
 };
@@ -64,9 +64,9 @@ public:
  * obj->insert(key,val);
  * int param_2 = obj->sum(prefix);
  */
- 
- // Driver code for testing 
+
+ // Driver code for testing
  int main() {
-	 
-	 return 0;
+
+     return 0;
  }
