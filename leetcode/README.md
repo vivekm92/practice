@@ -3,6 +3,7 @@
 * [677 map-sum-pairs](https://leetcode.com/problems/map-sum-pairs/description/)&emsp;[solution](677.cpp)
 * [1422 maximum-score-after-splitting-a-string](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/)&emsp;[solution](1422.cpp)
 * [2270 number-of-ways-to-split-array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)&emsp;[solution](2270.cpp)
+* [2381 shifting-letters-ii](https://leetcode.com/problems/shifting-letters-ii/description/)&emsp;[solution](2381.cpp)
 * [2559 count-vowel-strings-in-ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/description/)&emsp;[solution](2559.cpp)
 * [2657 find-the-prefix-common-array-of-two-arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)&emsp;[solution](2657.cpp)
 * [3223 minimum-length-of-string-after-operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/description/)&emsp;[solution](3223.cpp)
