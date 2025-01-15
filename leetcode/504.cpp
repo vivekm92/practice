@@ -6,6 +6,7 @@ using namespace std;
 // https://leetcode.com/problems/base-7/description/
 class Solution {
 private:
+    // T(n) : O(logn) : S(n) : O(1)
     string solveconvertToBase7(int num) {
         if (num == 0) return "0";
         string res = "";
