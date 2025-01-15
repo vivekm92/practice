@@ -1,5 +1,6 @@
 
 * [208 implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/)&emsp;[solution](208.cpp)
+* [504 base-7](https://leetcode.com/problems/base-7/description/)&emsp;[solution](504.cpp)
 * [677 map-sum-pairs](https://leetcode.com/problems/map-sum-pairs/description/)&emsp;[solution](677.cpp)
 * [1422 maximum-score-after-splitting-a-string](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/)&emsp;[solution](1422.cpp)
 * [2429 minimize-xor](https://leetcode.com/problems/minimize-xor/description/)&emsp;[solution](2429.cpp)
