@@ -2,6 +2,7 @@
 * [208 implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/)&emsp;[solution](208.cpp)
 * [677 map-sum-pairs](https://leetcode.com/problems/map-sum-pairs/description/)&emsp;[solution](677.cpp)
 * [1422 maximum-score-after-splitting-a-string](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/)&emsp;[solution](1422.cpp)
+* [2429 minimize-xor](https://leetcode.com/problems/minimize-xor/description/)&emsp;[solution](2429.cpp)
 * [2270 number-of-ways-to-split-array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)&emsp;[solution](2270.cpp)
 * [2381 shifting-letters-ii](https://leetcode.com/problems/shifting-letters-ii/description/)&emsp;[solution](2381.cpp)
 * [2559 count-vowel-strings-in-ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/description/)&emsp;[solution](2559.cpp)
