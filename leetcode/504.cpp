@@ -18,9 +18,22 @@ private:
 
         return num < 0 ? "-"+res : res;
     }
+    
+    // T(n) : O(logn) : S(n) : O(1)
+    string _solveconvertToBase7(int num) {
+        if (num == 0) return "0";
+        string res = "";
+        int n = abs(num);
+        while (n > 0) {
+            res += to_string(n%7);
+            n /= 7;
+        }
+        reverse(res.begin(), res.end());
+        return num < 0 ? "-"+res : res;
+    }
 public:
     string convertToBase7(int num) {
-        return solveconvertToBase7(num);
+        return _solveconvertToBase7(num);
     }
 };
 
