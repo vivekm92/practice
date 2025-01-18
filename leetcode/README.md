@@ -1,4 +1,5 @@
 
+* [190 reverse-bits](https://leetcode.com/problems/reverse-bits/description/)&emsp;[solution](190.cpp)
 * [191 number-of-1-bits](https://leetcode.com/problems/number-of-1-bits/description/)&emsp;[solution](191.cpp)
 * [208 implement-trie-prefix-tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/)&emsp;[solution](208.cpp)
 * [405 convert-a-number-to-hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)&emsp;[solution](405.cpp)
