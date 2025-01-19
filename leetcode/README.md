@@ -1,4 +1,5 @@
 
+* [42 trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/)&emsp;[solution](42.cpp)
 * [89 gray-code](https://leetcode.com/problems/gray-code/description/)&emsp;[solution](89.cpp)
 * [136 single-number](https://leetcode.com/problems/single-number/description/)&emsp;[solution](136.cpp)
 * [137 single-number-ii](https://leetcode.com/problems/single-number-ii/description/)&emsp;[solution](137.cpp)
@@ -10,6 +11,7 @@
 * [405 convert-a-number-to-hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)&emsp;[solution](405.cpp)
 * [504 base-7](https://leetcode.com/problems/base-7/description/)&emsp;[solution](504.cpp)
 * [677 map-sum-pairs](https://leetcode.com/problems/map-sum-pairs/description/)&emsp;[solution](677.cpp)
+* [1368 minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)&emsp;[solution](1368.cpp)
 * [1422 maximum-score-after-splitting-a-string](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/)&emsp;[solution](1422.cpp)
 * [2270 number-of-ways-to-split-array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)&emsp;[solution](2270.cpp)
 * [2381 shifting-letters-ii](https://leetcode.com/problems/shifting-letters-ii/description/)&emsp;[solution](2381.cpp)
