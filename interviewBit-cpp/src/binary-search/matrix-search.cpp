@@ -2,10 +2,7 @@
 
 using namespace std;
 
-/*
-	IB : https://www.interviewbit.com/problems/matrix-search/
-	LC : 
-*/
+// Problem : https://www.interviewbit.com/problems/matrix-search/
 
 int matrixSearch2(vector<vector<int> >& A, int B) {
 	
