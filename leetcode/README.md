@@ -19,9 +19,11 @@
 * [2381 shifting-letters-ii](https://leetcode.com/problems/shifting-letters-ii/description/)&emsp;[solution](2381.cpp)
 * [2425 bitwise-xor-of-all-pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/)&emsp;[solution](2425.cpp)
 * [2429 minimize-xor](https://leetcode.com/problems/minimize-xor/description/)&emsp;[solution](2429.cpp)
+* [2493 divide-nodes-into-the-maximum-number-of-groups](https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/description/)&emsp;[solution](2493.cpp)
 * [2559 count-vowel-strings-in-ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/description/)&emsp;[solution](2559.cpp)
 * [2657 find-the-prefix-common-array-of-two-arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)&emsp;[solution](2657.cpp)
 * [2661 first-completely-painted-row-or-column](https://leetcode.com/problems/first-completely-painted-row-or-column/description/)&emsp;[solution](2661.cpp)
 * [2683 neighboring-bitwise-xor](https://leetcode.com/problems/neighboring-bitwise-xor/description/)&emsp;[solution](2683.cpp)
+* [3151 special-array-i](https://leetcode.com/problems/special-array-i/description/)&emsp;[solution](3151.cpp)
 * [3223 minimum-length-of-string-after-operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/description/)&emsp;[solution](3223.cpp)
  

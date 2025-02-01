@@ -4,9 +4,31 @@ using namespace std;
 
 // Problem : https://www.interviewbit.com/problems/matrix-search/
 
+int matrixSearchHelper2(vector<int>&A, int B, int l, int r) {
+    
+}
+
+int matrixSearch2(vector<vector<int> >& A, int B) {
+    int n = A.size(), m = A[0].size();
+    return matrixSearchHelper2(A, B, 0, n*m);
+}
+/********************************************************************************/
+
+// Optimised Approach 2:
+// T(n) : O(logn) : S(n) : O(1)
 int matrixSearch2(vector<vector<int> >& A, int B) {
 	
-	return 1;
+	int n = A.size(), m = A[0].size();
+    int l = 0, r = m * n;
+    while (l < r) {
+        int mid = l + (r - l) / 2;
+        if (A[mid/m][mid%m] < B) {
+            l = mid + 1;
+        } else {
+            r = mid;
+        }
+    }
+    return (l == m*n || A[l/m][l%m] != B) ? 0 : 1;
 }
 /********************************************************************************/
 
