@@ -15,6 +15,8 @@ private:
         return true;
     }
     
+    // using bit-wise
+    // T(n) : O(n) ; S(n) : O(1)
     bool solveisArraySpecial1(vector<int>& nums) {
         int n = nums.size();
         for (int i = 0; i < n-1; i++) {
