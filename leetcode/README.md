@@ -14,7 +14,8 @@
 * [677 map-sum-pairs](https://leetcode.com/problems/map-sum-pairs/description/)&emsp;[solution](677.cpp)
 * [1368 minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)&emsp;[solution](1368.cpp)
 * [1422 maximum-score-after-splitting-a-string](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/)&emsp;[solution](1422.cpp)
-* [1027 grid-game](https://leetcode.com/problems/grid-game/description/)&emsp;[solution](2017.cpp)
+* [1752 check-if-array-is-sorted-and-rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/)&emsp;[solution](1752.cpp)
+* [2017 grid-game](https://leetcode.com/problems/grid-game/description/)&emsp;[solution](2017.cpp)
 * [2270 number-of-ways-to-split-array](https://leetcode.com/problems/number-of-ways-to-split-array/description/)&emsp;[solution](2270.cpp)
 * [2381 shifting-letters-ii](https://leetcode.com/problems/shifting-letters-ii/description/)&emsp;[solution](2381.cpp)
 * [2425 bitwise-xor-of-all-pairings](https://leetcode.com/problems/bitwise-xor-of-all-pairings/description/)&emsp;[solution](2425.cpp)
@@ -24,6 +25,7 @@
 * [2657 find-the-prefix-common-array-of-two-arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)&emsp;[solution](2657.cpp)
 * [2661 first-completely-painted-row-or-column](https://leetcode.com/problems/first-completely-painted-row-or-column/description/)&emsp;[solution](2661.cpp)
 * [2683 neighboring-bitwise-xor](https://leetcode.com/problems/neighboring-bitwise-xor/description/)&emsp;[solution](2683.cpp)
+* [3105 longest-strictly-increasing-or-strictly-decreasing-subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/description/)&emsp;[solution](3105.cpp)
 * [3151 special-array-i](https://leetcode.com/problems/special-array-i/description/)&emsp;[solution](3151.cpp)
 * [3223 minimum-length-of-string-after-operations](https://leetcode.com/problems/minimum-length-of-string-after-operations/description/)&emsp;[solution](3223.cpp)
  
