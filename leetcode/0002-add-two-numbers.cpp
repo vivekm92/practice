@@ -35,7 +35,9 @@ private:
             carry = sum / 10;
         }
         if (carry != 0) curr->next = new ListNode(carry);
-        return dummy->next;
+        // ListNode *res = dummy->next;
+        // delete dummy;
+        return res;
     }
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
