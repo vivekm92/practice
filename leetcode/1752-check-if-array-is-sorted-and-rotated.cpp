@@ -22,7 +22,7 @@ private:
         }
         return false;
     }
-    
+
     // T(n) : O(n) ; S(n) : O(1)
     bool solvecheck1(vector<int>& nums) {
         int n = nums.size(), inversionCount = 0;
@@ -30,7 +30,7 @@ private:
             if (nums[i%n] > nums[(i+1)%n]) inversionCount++;
         }
         return inversionCount <= 1;
-    } 
+    }
 public:
     bool check(vector<int>& nums) {
         return solvecheck1(nums);
