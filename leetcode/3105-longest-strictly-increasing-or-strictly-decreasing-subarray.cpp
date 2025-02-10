@@ -14,12 +14,26 @@ private:
             if (nums[i] > nums[i-1]) incCount++;
             else incCount = 1;
             maxIncCount = max(maxIncCount, incCount);
-            
+
             if (nums[i] < nums[i-1]) decCount++;
             else decCount = 1;
             maxDecCount = max(maxDecCount, decCount);
         }
         return maxDecCount > maxIncCount ? maxDecCount : maxIncCount;
+    }
+
+    // T(n) : O(n) ; S(n) : O(1)
+    int solvelongestMonotonicSubarray1(vector<int>& nums) {
+        size_t n=nums.size();
+        int incCount=1, decCount=1, maxCount=1;
+        for (int i=1; i<n; i++) {
+            if (nums[i] > nums[i-1]) incCount++;
+            else incCount = 1;
+            if (nums[i] < nums[i-1]) decCount++;
+            else decCount = 1;
+            maxCount = max(maxCount, max(incCount,decCount));
+        }
+        return maxCount;
     }
 public:
     int longestMonotonicSubarray(vector<int>& nums) {
@@ -30,7 +44,7 @@ public:
 
 // Driver Code for testing
 int main() {
-    
+
     return 0;
 }
 
