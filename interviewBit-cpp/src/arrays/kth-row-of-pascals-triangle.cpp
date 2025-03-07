@@ -1,43 +1,31 @@
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 using namespace std;
 
+// Problem : https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/
+
+// Approach 1
 // using recursive approach
 // T(n) : O(n2) ; S(n) : O(n)
-vector<int> kthRowOfPascalsTriangle(int A) {
-    
+vector<int> kthRowOfPascalsTriangle1(int A) {
+
     if (A == 0) return {1};
     else if (A == 1) return {1,1};
-    
-    vector<int> prevRow = kthRowOfPascalsTriangle(A-1);
-    vector<int> temp;
-    for (int i = 0; i < prevRow.size(); i++) {
-        if (i == 0) temp.push_back(1);
-        else temp.push_back(prevRow[i-1] + prevRow[i]);
+    vector<int> row = kthRowOfPascalsTriangle1(A-1);
+    for (int i = row.size()-1; i >= 1; i--) {
+        row[i] += row[i-1];
     }
-    temp.push_back(1);
-    return temp;
+    row.push_back(1);
+    return row;
 }
 
-// using binomial-coefficient
-// T(n) : O(n) : S(n) : O(1)
-vector<int> kthRowOfPascalsTriangle1(int A) {
-    
-    vector<int> res;
-    int t = 1;
-    for (int i = 1; i <= A + 1; i++) {
-        res.push_back(t);
-        t = t * (A + 1 - i) / i;
-    }
-    
-    return res;
-}
-
+// Approach 2
 // using iterative approach
 // T(n) : O(n2) ; S(n) : O(n)
 vector<int> kthRowOfPascalsTriangle2(int A) {
-    
+
     vector<int> res(A+1, 0);
     res[0] = 1;
     for (int i = 1; i <= A; i++) {
@@ -45,49 +33,66 @@ vector<int> kthRowOfPascalsTriangle2(int A) {
             res[j] += res[j-1];
         }
     }
-    
+
     return res;
 }
 
+// Approach 3
+// using binomial-coefficient
+// T(n) : O(n) : S(n) : O(1)
+vector<int> kthRowOfPascalsTriangle3(int A) {
+
+    vector<int> res;
+    int t = 1;
+    for (int i = 1; i <= A + 1; i++) {
+        res.push_back(t);
+        t = t * (A + 1 - i) / i;
+    }
+
+    return res;
+}
+
+void test_correctness(vector<int>& tc, vector<int>& res) {
+
+    cout << "got  : ";
+    for (auto &t : tc) cout << t << " ";
+    cout << "\n";
+    cout << "want : ";
+    for (auto &r : res) cout << r << " ";
+    cout << "\n";
+    assert(tc.size() == res.size());
+    for (int i = 0; i < tc.size(); i++) {
+        assert(tc[i] == res[i]);
+    }
+}
 
 // Driver Code for testing
 int main() {
-    
-    vector<int> arr = kthRowOfPascalsTriangle(4);
-    for (auto &a : arr) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr1 = kthRowOfPascalsTriangle(5);
-    for (auto &a : arr1) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr2 = kthRowOfPascalsTriangle(6);
-    for (auto &a : arr2) cout << a << " ";
-    cout << "\n";
 
-    vector<int> arr3 = kthRowOfPascalsTriangle1(4);
-    for (auto &a : arr3) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr4 = kthRowOfPascalsTriangle1(5);
-    for (auto &a : arr4) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr5 = kthRowOfPascalsTriangle1(6);
-    for (auto &a : arr5) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr6 = kthRowOfPascalsTriangle2(4);
-    for (auto &a : arr6) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr7 = kthRowOfPascalsTriangle2(5);
-    for (auto &a : arr7) cout << a << " ";
-    cout << "\n";
-    
-    vector<int> arr8 = kthRowOfPascalsTriangle2(6);
-    for (auto &a : arr8) cout << a << " ";
-    cout << "\n";
+    vector<int> arr1 = kthRowOfPascalsTriangle1(4);
+    vector<int> brr1 = kthRowOfPascalsTriangle2(4);
+    vector<int> crr1 = kthRowOfPascalsTriangle3(4);
+    vector<int> want1 = {1,4,6,4,1};
+    test_correctness(arr1, want1);
+    test_correctness(brr1, want1);
+    test_correctness(crr1, want1);
+
+    vector<int> arr2 = kthRowOfPascalsTriangle1(5);
+    vector<int> brr2 = kthRowOfPascalsTriangle2(5);
+    vector<int> crr2 = kthRowOfPascalsTriangle3(5);
+    vector<int> want2 = {1,5,10,10,5,1};
+    test_correctness(arr2, want2);
+    test_correctness(brr2, want2);
+    test_correctness(crr2, want2);
+
+    vector<int> arr3 = kthRowOfPascalsTriangle1(6);
+    vector<int> brr3 = kthRowOfPascalsTriangle2(6);
+    vector<int> crr3 = kthRowOfPascalsTriangle3(6);
+    vector<int> want3 = {1,6,15,20,15,6,1};
+    test_correctness(arr3, want3);
+    test_correctness(brr3, want3);
+    test_correctness(crr3, want3);
+
     return 0;
 }
 
@@ -97,4 +102,6 @@ int main() {
  * k = 2, o/p = {1,2,1}
  * k = 3, o/p = {1,3,3,1}
  * k = 4, o/p = {1,4,6,4,1}
+ * k = 5, o/p = {1,5,10,10,5,1}
+ * k = 6, o/p = {1,6,15,20,15,6,1}
  * */
