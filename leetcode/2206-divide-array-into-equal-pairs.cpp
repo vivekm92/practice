@@ -26,7 +26,6 @@ private:
     // T(n) : O(nlogn) ; S(n) : O(1)
     bool solveDivideArray1(vector<int>& nums) {
 
-
         sort(nums.begin(), nums.end());
         int n = nums.size(), start = 0, end = 0;
         while (end < n) {
