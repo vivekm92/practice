@@ -4,6 +4,7 @@ using namespace std;
 
 class Solution {
 private:
+    // T(n) : O(1) ; S(n) : O(1)
     long long solveColoredCells(long long n) {
         return 2 * n * n - (2 * n - 1);
     }
