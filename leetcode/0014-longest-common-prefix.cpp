@@ -3,6 +3,68 @@
 
 using namespace std;
 
+class TrieNode {
+public:
+    TrieNode *children[26];
+    bool isEnd;
+    int linkCount;
+
+    TrieNode() : isEnd(false), linkCount(0) {
+        for (int i = 0; i < 26; i++) {
+            children[i] = nullptr;
+        }
+    }
+
+    void put(TrieNode *node, char ch) {
+        if (children[ch - 'a'] == nullptr) {
+            children[ch - 'a'] = node;
+            linkCount++;
+        }
+    }
+
+    bool contains(char ch) {
+        return children[ch - 'a'] != nullptr;
+    }
+
+    int getLinks() const { return linkCount; }
+};
+
+
+class Trie {
+public:
+    TrieNode *root;
+
+    Trie() { root = new TrieNode(); }
+
+    void insert(string word) {
+
+        TrieNode *node = root;
+        for (char &ch : word) {
+            if (!node->contains(ch)) {
+                node->put(new TrieNode(), ch);
+            }
+            node = node->children[ch - 'a'];
+        }
+
+        node->isEnd = true;
+    }
+
+    string longestPrefix(string word) {
+
+        TrieNode *node = root;
+        string prefix = "";
+        for (char &ch : word) {
+            if (!node->contains(ch) || node->isEnd == true || node->getLinks() != 1) {
+                break;
+            }
+            prefix += ch;
+            node = node->children[ch - 'a'];
+        }
+
+        return prefix;
+    }
+};
+
 // https://leetcode.com/problems/longest-common-prefix/description/
 class Solution {
 private:
@@ -116,9 +178,26 @@ private:
 
         return strs[0].substr(0, l-1);
     }
+
+    // Approach 5
+    // using trie
+    // T(n) : O(n*m) ; S(n) : O(n*m)
+    string solveLongestCommonPrefix4(vector<string> &strs) {
+
+        int n = strs.size();
+        if (n == 0) return "";
+        else if (n == 1) return strs[0];
+
+        Trie trie;
+        for (int i = 1; i < n; i++) {
+            trie.insert(strs[i]);
+        }
+
+        return trie.longestPrefix(strs[0]);
+    }
 public:
     string longestCommonPrefix(vector<string>& strs) {
-        return solveLongestCommonPrefix2(strs);
+        return solveLongestCommonPrefix4(strs);
     }
 };
 
