@@ -1,9 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <unordered_map>
+#include <bits/stdc++.h>
 
 using namespace std;
-
 
 // https://leetcode.com/problems/two-sum/description/
 class Solution {
